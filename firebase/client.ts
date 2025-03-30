@@ -2,13 +2,13 @@ import { initializeApp, getApp, getApps } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyAlNImc67Q8RqsBH4Z_FdPJy2-OE40V41k",
-  authDomain: "interviewprep-9929a.firebaseapp.com",
-  projectId: "interviewprep-9929a",
-  storageBucket: "interviewprep-9929a.firebasestorage.app",
-  messagingSenderId: "654684579557",
-  appId: "1:654684579557:web:cc87caead8e5779e16160c",
-  measurementId: "G-F9PJP91FDN",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
